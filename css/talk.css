@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+@import "nav-bar.css";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #abc1d1;
+}
+.talk__header {
+  margin: 25px;
+  padding: 25px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.talk__header svg {
+  width: 30px;
+  height: 30px;
+}
+.talk__header-column {
+  width: 33%;
+}
+.talk__header-column:first-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.talk__header-column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.talk__header-column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.talk__header-column svg:first-child {
+  margin-right: 30px;
+}
+.talk__date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.talk__date-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 20px;
+}
+.talk__lee-line {
+  display: flex;
+  margin: 25px;
+  animation: fadeIn 0.3s linear;
+}
+.talk__lee-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.talk__lee-name {
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.talk__lee-content {
+  display: flex;
+  flex-direction: column;
+}
+.talk__lee-chat {
+  display: flex;
+}
+.talk__lee-comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.talk__lee-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: gray;
+}
+.talk__me-line {
+  opacity: 0;
+  display: flex;
+  margin: 25px;
+  justify-content: flex-end;
+  animation: fadeIn 0.3s linear forwards;
+  animation-delay: 0.5s;
+}
+.talk__me-chat {
+  display: flex;
+}
+.talk__me-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: gray;
+}
+.talk__me-comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+  padding: 20px;
+  border-radius: 20px;
+  border-top-right-radius: 0px;
+  font-size: 30px;
+  margin-left: 10px;
+}
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px 5px 0px;
+  box-sizing: border-box;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.reply .reply__column:first-child {
+  display: flex;
+  width: 7.5%;
+  justify-content: center;
+  align-items: center;
+}
+.reply .reply__column:last-child {
+  display: flex;
+  width: 92.5%;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+.reply svg {
+  color: rgba(0, 0, 0, 0.4);
+  width: 40px;
+  height: 40px;
+}
+.reply__column:last-child input {
+  width: 80%;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  padding-left: 10px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+.reply__icon {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.reply__icon svg:last-child {
+  background-color: black;
+  color: gold;
+  border-radius: 50%;
+}
+.reply__icon button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+.reply__column:first-child,
+.reply__icon {
+  transition: all 0.3s ease-in-out;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .reply__icon {
+  opacity: 0;
+}
+.reply:focus-within .reply__column:last-child {
+  transform: translateX(-3.25%) translateY(-80px) scaleX(1.075);
+}
+.reply:focus-within {
+  transform: translateY(80px);
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}

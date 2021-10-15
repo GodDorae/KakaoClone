@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+@import "nav-bar.css";
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.screen-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 25px 30px 25px;
+}
+.screen-header__title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.screen-header__icons {
+  display: flex;
+}
+.screen-header__icons svg{
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+.screen-header__icons span:first-child:hover,
+.screen-header__icons span:nth-child(3):hover,
+.screen-header__icons span:last-child:hover,
+.screen-header__icons__chat:hover
+{
+  animation: updownIcon 1s ease-in-out infinite;
+}
+.screen-header__icons__chat {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.screen-header__icons__chatplus {
+  position: absolute;
+  font-size: 20px;
+  left: 42px;
+  bottom: 15px;
+  font-weight: 900;
+}
+.chat-component {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+}
+.chat-component__front {
+  display: flex;
+}
+.chat-component__image {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.chat-component__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.chat-component__subtitle {
+  margin-top: 15px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.2)
+}
+.chat-component__back {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 15px;
+}
+.chat-component__time {
+  color: rgba(0, 0, 0, 0.4);
+}
+.chat-component__num {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin-top: 15px;
+  color: white;
+  background-color: tomato;
+  border-radius: 12.5px;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes updownIcon {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
