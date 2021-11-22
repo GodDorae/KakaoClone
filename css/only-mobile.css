@@ -1,8 +1,8 @@
 #only-mobile {
   position: absolute;
   z-index: 99;
-  height: 100%;
-  width: 100%;
+  height: 100vw;
+  width: 100vw;
   background-color: gold;
   display: flex;
   justify-content: center;
