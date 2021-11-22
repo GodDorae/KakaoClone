@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import "reset.css";
 @import "status-bar.css";
 @import "nav-bar.css";
+@import "only-mobile.css";
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .screen-header {
   display: flex;
@@ -19,7 +20,7 @@ body {
 .screen-header__icons {
   display: flex;
 }
-.screen-header__icons svg{
+.screen-header__icons svg {
   width: 30px;
   height: 30px;
   margin-left: 20px;
@@ -27,8 +28,7 @@ body {
 .screen-header__icons span:first-child:hover,
 .screen-header__icons span:nth-child(3):hover,
 .screen-header__icons span:last-child:hover,
-.screen-header__icons__chat:hover
-{
+.screen-header__icons__chat:hover {
   animation: updownIcon 1s ease-in-out infinite;
 }
 .screen-header__icons__chat {
@@ -67,7 +67,7 @@ body {
 .chat-component__subtitle {
   margin-top: 15px;
   font-size: 15px;
-  color: rgba(0, 0, 0, 0.2)
+  color: rgba(0, 0, 0, 0.2);
 }
 .chat-component__back {
   display: flex;

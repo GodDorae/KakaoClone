@@ -1,100 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to Kokoa Clone</title>
+    <link rel="stylesheet" href="css/talk.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Welcome to Kokoa Clone</title>
-  <link rel="stylesheet" href="css/talk.css">
-</head>
-
-<body>
-  <div class="status-bar">
-    <div class="status-bar__column">
-      <span>No service</span>
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
-      </svg>
-    </div>
-    <div class="status-bar__column">
-      <span>18:43</span>
-    </div>
-    <div class="status-bar__column">
-      <span>11%</span>
-      <svg class="status-bar__column__battery" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-        <!--! Font Awesome Free 6.0.0-beta2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
-        <path d="M192 192H96v128h96V192zM544 192V160c0-35.35-28.65-64-64-64H64C28.65 96 0 124.7 0 160v192c0 35.35 28.65 64 64 64h416c35.35 0 64-28.65 64-64v-32c17.67 0 32-14.33 32-32V224C576 206.3 561.7 192 544 192zM480 352H64V160h416V352z" />
-      </svg>
-      <svg class="status-bar__column__bolt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-        <!--! Font Awesome Free 6.0.0-beta2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
-        <path
-          d="M373.1 280.1l-255.1 223.1C111.1 509.3 103.5 512 96 512c-6.593 0-13.19-2.016-18.81-6.109c-12.09-8.781-16.5-24.76-10.59-38.5L143.5 288L32.01 288c-13.34 0-25.28-8.266-29.97-20.75c-4.687-12.47-1.125-26.55 8.906-35.33l255.1-223.1c11.25-9.89 27.81-10.58 39.87-1.799c12.09 8.781 16.5 24.76 10.59 38.5l-76.88 179.4l111.5-.0076c13.34 0 25.28 8.266 29.97 20.75C386.6 257.2 383.1 271.3 373.1 280.1z" />
-      </svg>
-    </div>
-  </div>
-  <div class="talk__header">
-    <div class="talk__header-column">
-      <a href="chats.html">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left" class="svg-inline--fa fa-angle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-          <path fill="currentColor"
-            d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"></path>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+          />
         </svg>
-      </a>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <svg
+          class="status-bar__column__battery"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 576 512"
+        >
+          <!--! Font Awesome Free 6.0.0-beta2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+          <path
+            d="M192 192H96v128h96V192zM544 192V160c0-35.35-28.65-64-64-64H64C28.65 96 0 124.7 0 160v192c0 35.35 28.65 64 64 64h416c35.35 0 64-28.65 64-64v-32c17.67 0 32-14.33 32-32V224C576 206.3 561.7 192 544 192zM480 352H64V160h416V352z"
+          />
+        </svg>
+        <svg
+          class="status-bar__column__bolt"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+        >
+          <!--! Font Awesome Free 6.0.0-beta2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+          <path
+            d="M373.1 280.1l-255.1 223.1C111.1 509.3 103.5 512 96 512c-6.593 0-13.19-2.016-18.81-6.109c-12.09-8.781-16.5-24.76-10.59-38.5L143.5 288L32.01 288c-13.34 0-25.28-8.266-29.97-20.75c-4.687-12.47-1.125-26.55 8.906-35.33l255.1-223.1c11.25-9.89 27.81-10.58 39.87-1.799c12.09 8.781 16.5 24.76 10.59 38.5l-76.88 179.4l111.5-.0076c13.34 0 25.28 8.266 29.97 20.75C386.6 257.2 383.1 271.3 373.1 280.1z"
+          />
+        </svg>
+      </div>
     </div>
-    <div class="talk__header-column">
-      <h1>Daeho Lee</h1>
+    <div class="talk__header">
+      <div class="talk__header-column">
+        <a href="chats.html">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="angle-left"
+            class="svg-inline--fa fa-angle-left"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 512"
+          >
+            <path
+              fill="currentColor"
+              d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <div class="talk__header-column">
+        <h1>Daeho Lee</h1>
+      </div>
+      <div class="talk__header-column">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="magnifying-glass"
+          class="svg-inline--fa fa-magnifying-glass"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="currentColor"
+            d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"
+          ></path>
+        </svg>
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="bars"
+          class="svg-inline--fa fa-bars"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M416 224H31.1C14.33 224 0 238.3 0 256s14.33 32 31.1 32h384C433.7 288 448 273.7 448 256S433.7 224 416 224zM416 384H31.1C14.33 384 0 398.3 0 415.1S14.33 448 31.1 448h384C433.7 448 448 433.7 448 416S433.7 384 416 384zM416 64H31.1C14.33 64 0 78.33 0 95.1S14.33 128 31.1 128h384C433.7 128 448 113.7 448 96S433.7 64 416 64z"
+          ></path>
+        </svg>
+      </div>
     </div>
-    <div class="talk__header-column">
-      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path fill="currentColor"
-          d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z">
-        </path>
-      </svg>
-      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-        <path fill="currentColor"
-          d="M416 224H31.1C14.33 224 0 238.3 0 256s14.33 32 31.1 32h384C433.7 288 448 273.7 448 256S433.7 224 416 224zM416 384H31.1C14.33 384 0 398.3 0 415.1S14.33 448 31.1 448h384C433.7 448 448 433.7 448 416S433.7 384 416 384zM416 64H31.1C14.33 64 0 78.33 0 95.1S14.33 128 31.1 128h384C433.7 128 448 113.7 448 96S433.7 64 416 64z">
-        </path>
-      </svg>
+    <div class="talk__date">
+      <div class="talk__date-content">Thursday, October 14, 2021</div>
     </div>
-  </div>
-  <div class="talk__date">
-    <div class="talk__date-content">
-      Thursday, October 14, 2021
-    </div>
-  </div>
-  <div class = "talk__main">
-    <div class="talk__lee-line">
-      <img src="lee.jpg" class="talk__lee-image" />
-      <div class="talk__lee-content">
-        <h4 class="talk__lee-name">Daeho Lee</h4>
-        <div class="talk__lee-chat">
-          <span class="talk__lee-comment">Welcome to Lotte Giants, Dohyun!</span>
-          <span class="talk__lee-time">18:43</span>
+    <div class="talk__main">
+      <div class="talk__lee-line">
+        <img src="lee.jpg" class="talk__lee-image" />
+        <div class="talk__lee-content">
+          <h4 class="talk__lee-name">Daeho Lee</h4>
+          <div class="talk__lee-chat">
+            <span class="talk__lee-comment"
+              >Welcome to Lotte Giants, Dohyun!</span
+            >
+            <span class="talk__lee-time">18:43</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk__me-line">
+        <div class="talk__me-content">
+          <div class="talk__me-chat">
+            <span class="talk__me-time">18:43</span>
+            <span class="talk__me-comment">Nice to meet you!</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="talk__me-line">
-      <div class="talk__me-content">
-        <div class="talk__me-chat">
-          <span class="talk__me-time">18:43</span>
-          <span class="talk__me-comment">Nice to meet you!</span>
+    <form class="reply">
+      <div class="reply__column">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="far"
+          data-icon="square-plus"
+          class="svg-inline--fa fa-square-plus"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M319.1 232h-72V160c0-13.25-10.74-24-23.1-24S199.1 146.7 199.1 160v72H127.1C114.7 232 103.1 242.7 103.1 256S114.7 280 127.1 280h71.1V352c0 13.25 10.75 24 24 24s23.1-10.75 23.1-24V280h72c13.25 0 23.1-10.75 23.1-24S333.3 232 319.1 232zM384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM400 416c0 8.822-7.178 16-16 16H64c-8.822 0-16-7.178-16-16V96c0-8.822 7.178-16 16-16h320c8.822 0 16 7.178 16 16V416z"
+          ></path>
+        </svg>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <div class="reply__icon">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="far"
+            data-icon="face-smile"
+            class="svg-inline--fa fa-face-smile"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M336 240c17.68 0 31.99-14.25 31.99-32s-14.31-32-31.99-32c-17.8 0-32.02 14.25-32.02 32S318.2 240 336 240zM175.1 240c17.8 0 32.02-14.25 32.02-32s-14.22-32-32.02-32c-17.68 0-31.99 14.25-31.99 32S158.3 240 175.1 240zM340 312.6C319.2 337.6 288.5 352 256 352s-63.21-14.25-84.04-39.38c-8.477-10.25-23.61-11.5-33.79-3.125C128 318 126.7 333.1 135.1 343.3c29.91 36 74.11 56.73 120.9 56.73s90.94-20.73 120.9-56.73c8.598-10.12 7.145-25.25-3.027-33.75C363.7 301.1 348.5 302.4 340 312.6zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z"
+            ></path>
+          </svg>
+          <button>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="circle-arrow-up"
+              class="svg-inline--fa fa-circle-arrow-up"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM382.6 254.6c-12.5 12.5-32.75 12.5-45.25 0L288 205.3V384c0 17.69-14.33 32-32 32s-32-14.31-32-32V205.3L174.6 254.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l103.1-103.1C241.3 97.4 251.1 96 256 96c4.881 0 14.65 1.391 22.65 9.398l103.1 103.1C395.1 221.9 395.1 242.1 382.6 254.6z"
+              ></path>
+            </svg>
+          </button>
         </div>
       </div>
+    </form>
+    <div id="only-mobile">
+      <span>Your screen is too big! :(</span>
     </div>
-  </div>
-  <form class = "reply">
-    <div class = "reply__column">
-      <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="square-plus" class="svg-inline--fa fa-square-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M319.1 232h-72V160c0-13.25-10.74-24-23.1-24S199.1 146.7 199.1 160v72H127.1C114.7 232 103.1 242.7 103.1 256S114.7 280 127.1 280h71.1V352c0 13.25 10.75 24 24 24s23.1-10.75 23.1-24V280h72c13.25 0 23.1-10.75 23.1-24S333.3 232 319.1 232zM384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM400 416c0 8.822-7.178 16-16 16H64c-8.822 0-16-7.178-16-16V96c0-8.822 7.178-16 16-16h320c8.822 0 16 7.178 16 16V416z"></path></svg>
-    </div>
-    <div class = "reply__column">
-      <input type = "text" placeholder = "Write a message..."/>
-      <div class = "reply__icon">
-        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="face-smile" class="svg-inline--fa fa-face-smile" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M336 240c17.68 0 31.99-14.25 31.99-32s-14.31-32-31.99-32c-17.8 0-32.02 14.25-32.02 32S318.2 240 336 240zM175.1 240c17.8 0 32.02-14.25 32.02-32s-14.22-32-32.02-32c-17.68 0-31.99 14.25-31.99 32S158.3 240 175.1 240zM340 312.6C319.2 337.6 288.5 352 256 352s-63.21-14.25-84.04-39.38c-8.477-10.25-23.61-11.5-33.79-3.125C128 318 126.7 333.1 135.1 343.3c29.91 36 74.11 56.73 120.9 56.73s90.94-20.73 120.9-56.73c8.598-10.12 7.145-25.25-3.027-33.75C363.7 301.1 348.5 302.4 340 312.6zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z"></path></svg>
-        <button>
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-up" class="svg-inline--fa fa-circle-arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM382.6 254.6c-12.5 12.5-32.75 12.5-45.25 0L288 205.3V384c0 17.69-14.33 32-32 32s-32-14.31-32-32V205.3L174.6 254.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l103.1-103.1C241.3 97.4 251.1 96 256 96c4.881 0 14.65 1.391 22.65 9.398l103.1 103.1C395.1 221.9 395.1 242.1 382.6 254.6z"></path></svg>
-        </button>
-      </div>
-    </div>
-  </form>
-</body>
-
+  </body>
 </html>
